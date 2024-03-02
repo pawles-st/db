@@ -1,0 +1,3 @@
+SELECT film.title
+FROM film INNER JOIN film_category USING(film_id) INNER JOIN category USING(category_id)
+WHERE category.name = ‘Family’ AND film.description LIKE ‘%Documentary%’;
